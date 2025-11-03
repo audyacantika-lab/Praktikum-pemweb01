@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 25px 35px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 380px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .terms {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Class Registration Form</h2>
+    <p>Please fill out the form below to register for our class</p>
+
+    <form>
+      <div class="form-group">
+        <input type="text" placeholder="Jumratun" required>
+        <input type="text" placeholder="Ratu" required>
+      </div>
+
+      <div class="form-group">
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="087711718471" required>
+      </div>
+
+      <label>Class Level</label>
+      <select required>
+        <option value="">Select your class level</option>
+        <option>Beginner</option>
+        <option>Intermediate</option>
+        <option>Advanced</option>
+      </select>
+      <p style="font-size: 12px; color:#666; margin-top:5px;">Please choose the appropriate level for your experience</p>
+
+      <label>Class Days</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Monday</label>
+        <label><input type="checkbox"> Tuesday</label>
+        <label><input type="checkbox"> Wednesday</label>
+        <label><input type="checkbox"> Thursday</label>
+        <label><input type="checkbox"> Friday</label>
+        <label><input type="checkbox"> Saturday</label>
+      </div>
+
+      <div class="terms">
+        <label><input type="checkbox" required> I agree to the terms and conditions of the class registration</label>
+      </div>
+
+      <button type="submit">Register Now!</button>
+    </form>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 5px 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .terms {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Event Registration Form</h2>
+    <p>Please fill out the form below to register for the event.</p>
+
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <div>
+          <label>First Name</label>
+          <input type="text" placeholder="Jumratun" required>
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" placeholder="Ratu" required>
+        </div>
+      </div>
+
+      <!-- Email -->
+      <label>Email Address</label>
+      <input type="email" placeholder="john.doe@example.com" required>
+
+      <!-- Phone -->
+      <label>Phone Number</label>
+      <input type="tel" placeholder="087711718471" required>
+
+      <!-- Country and DOB -->
+      <div class="form-group">
+        <div>
+          <label>Country</label>
+          <select required>
+            <option value="">Select Country</option>
+            <option>Indonesia</option>
+            <option>United States</option>
+            <option>United Kingdom</option>
+            <option>Australia</option>
+          </select>
+        </div>
+        <div>
+          <label>Date of Birth</label>
+          <input type="date" required>
+        </div>
+      </div>
+
+      <!-- T-shirt size -->
+      <label>T-Shirt Size</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Small</label>
+        <label><input type="checkbox"> Medium</label>
+        <label><input type="checkbox"> Large</label>
+        <label><input type="checkbox"> Extra Large</label>
+      </div>
+
+      <!-- Emergency contact -->
+      <div class="section-title">Emergency Contact Information</div>
+
+      <label>Emergency Contact Name</label>
+      <input type="text" placeholder="Jane Smith" required>
+
+      <label>Emergency Contact Phone Number</label>
+      <input type="tel" placeholder="087711718471" required>
+
+      <!-- Terms -->
+      <div class="terms">
+        <label><input type="checkbox" required> I agree to the terms and conditions of this event.</label>
+      </div>
+
+      <button type="submit">Register Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    .radio-group,
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .terms {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #007BFF;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Membership Registration Form</h2>
+    <p>Please fill out the form below to become a member.</p>
+
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <div>
+          <label>First Name</label>
+          <input type="text" placeholder="Jumratun" required>
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" placeholder="Ratu" required>
+        </div>
+      </div>
+
+      <!-- Email & Phone -->
+      <div class="form-group">
+        <div>
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email address" required>
+        </div>
+        <div>
+          <label>Phone Number</label>
+          <input type="tel" placeholder="087711718471" required>
+        </div>
+      </div>
+
+      <!-- Address -->
+      <label>Address Line 1</label>
+      <input type="text" placeholder="Enter your address line 1" required>
+
+      <label>Address Line 2</label>
+      <input type="text" placeholder="Enter your address line 2">
+
+      <!-- Country -->
+      <label>Country</label>
+      <select required>
+        <option>United States of America</option>
+        <option>Indonesia</option>
+        <option>United Kingdom</option>
+        <option>Canada</option>
+        <option>Australia</option>
+      </select>
+
+      <!-- Membership Type -->
+      <label class="section-title">Membership Type</label>
+      <div class="radio-group">
+        <label><input type="radio" name="membership" required> Basic</label>
+        <label><input type="radio" name="membership"> Premium</label>
+        <label><input type="radio" name="membership"> Elite</label>
+      </div>
+
+      <!-- Interests -->
+      <label class="section-title">Interests</label>
+      <label>Favorite Sports</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Football</label>
+        <label><input type="checkbox"> Basketball</label>
+        <label><input type="checkbox"> Baseball</label>
+        <label><input type="checkbox"> Hockey</label>
+        <label><input type="checkbox"> Soccer</label>
+        <label><input type="checkbox"> Other</label>
+      </div>
+
+      <!-- Reason -->
+      <label>Why do you want to become a member?</label>
+      <textarea placeholder="Please tell us why you want to join"></textarea>
+
+      <!-- Terms -->
+      <div class="terms">
+        <label><input type="checkbox" required> I agree to the terms and conditions.</label>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Volunteer Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px 35px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      font-size: 15px;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px 10px;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+
+    .time-group {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .terms {
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Volunteer Sign Up Form</h2>
+    <p>Please fill out the following form to become a volunteer.</p>
+
+    <form>
+      <!-- Name -->
+      <div class="form-group">
+        <div>
+          <label>First Name</label>
+          <input type="text" placeholder="Jumratun" required />
+        </div>
+        <div>
+          <label>Last Name</label>
+          <input type="text" placeholder="Ratu" required />
+        </div>
+      </div>
+
+      <!-- Email -->
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email address" required />
+
+      <!-- Phone -->
+      <label>Phone Number</label>
+      <input type="tel" placeholder=" 087711718471" required />
+
+      <!-- Date of Birth -->
+      <label>Date of Birth</label>
+      <input type="Date" required />
+
+      <!-- Volunteer Role -->
+      <label>Preferred Volunteer Role</label>
+      <select required>
+        <option value="">Select your preferred volunteer role</option>
+        <option>Event Support</option>
+        <option>Community Outreach</option>
+        <option>Fundraising</option>
+        <option>Logistics</option>
+      </select>
+
+      <!-- Availability -->
+      <div class="section-title">Availability</div>
+      <label>Days Available</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Monday</label>
+        <label><input type="checkbox" /> Tuesday</label>
+        <label><input type="checkbox" /> Wednesday</label>
+        <label><input type="checkbox" /> Thursday</label>
+        <label><input type="checkbox" /> Friday</label>
+        <label><input type="checkbox" /> Saturday</label>
+        <label><input type="checkbox" /> Sunday</label>
+      </div>
+
+      <div class="time-group">
+        <div>
+          <label>Available Start Time</label>
+          <input type="time" value="09:00" />
+        </div>
+        <div>
+          <label>Available End Time</label>
+          <input type="time" value="17:00" />
+        </div>
+      </div>
+
+      <!-- Skills and Interests -->
+      <div class="section-title">Skills and Interests</div>
+
+      <label>Skills and Experience</label>
+      <textarea placeholder="Enter your skills and experience"></textarea>
+      <p style="font-size: 12px; color: #666; margin-top: 5px;">
+        Please describe your skills and experience, if any, that would be relevant to the volunteer role.
+      </p>
+
+      <label>Interests</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" /> Animals</label>
+        <label><input type="checkbox" /> Children</label>
+        <label><input type="checkbox" /> Elderly</label>
+        <label><input type="checkbox" /> Environment</label>
+        <label><input type="checkbox" /> Health</label>
+        <label><input type="checkbox" /> Homelessness</label>
+        <label><input type="checkbox" /> Poverty</label>
+      </div>
+
+      <!-- Terms -->
+      <div class="terms">
+        <label>
+          <input type="checkbox" required /> I agree to the terms and conditions of the volunteer program.
+        </label>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      margin-top: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: none;
+      height: 80px;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      margin-top: 5px;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+    }
+
+    .terms {
+      margin-top: 15px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+  <form class="form-container">
+    <h2>Order Form</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" placeholder="Jumratun" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" placeholder="john.doe@example.com" required>
+
+    <label for="phone">Phone</label>
+    <input type="text" id="phone" placeholder="+1 (555) 123-4567" required>
+
+    <h3>Order Details</h3>
+
+    <label for="product">Product</label>
+    <select id="product" required>
+      <option value="">Select a product</option>
+      <option value="tshirt">T-Shirt</option>
+      <option value="hoodie">Hoodie</option>
+      <option value="cap">Cap</option>
+    </select>
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" value="1" min="1" required>
+
+    <label>Size</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Small</label>
+      <label><input type="checkbox"> Medium</label>
+      <label><input type="checkbox"> Large</label>
+      <label><input type="checkbox"> XL</label>
+    </div>
+
+    <label>Color</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Red</label>
+      <label><input type="checkbox"> Blue</label>
+      <label><input type="checkbox"> Green</label>
+      <label><input type="checkbox"> Black</label>
+    </div>
+
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" placeholder="Enter any additional comments or instructions"></textarea>
+
+    <h3>Payment Details</h3>
+
+    <label for="payment">Payment Method</label>
+    <select id="payment" required>
+      <option value="">Select a payment method</option>
+      <option value="credit">Credit Card</option>
+      <option value="bank">Bank Transfer</option>
+      <option value="cash">Cash on Delivery</option>
+    </select>
+
+    <div class="terms">
+      <label><input type="checkbox" required> I accept the terms and conditions.</label>
+    </div>
+
+    <button type="submit">Submit Order</button>
+  </form>
+</body>
+</html>
